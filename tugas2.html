@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun Media Sosial</title>
+
+    <style>
+        fieldset{
+            background-color: blue;
+            color: white;
+
+        }
+
+
+        legend{
+            background-color: blue;
+            color: aliceblue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .legend1{
+            background-color: yellow;
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+
+
+        
+
+        .fieldset1{
+            background-image:  url(medsos\ image.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .btn-submit{
+            background-color: blue;
+        }
+
+        .btn-reset{
+            background-color: red;
+        }
+        
+    </style> 
+</head>
+<body>
+    <form action="a" >
+        <fieldset>
+            <legend>Akun</legend>
+            <label>Nama Pengguna:</label>
+            <input type="text" name="nama"><br><br>
+            
+            <label>Password:</label>
+            <input type="password" name="password"><br><br>
+
+        </fieldset>
+        <fieldset class="fieldset1">
+            <legend class="legend1">Tentang Pengguna</legend>
+            <label>Deskripsi Singkat:</label>
+            <textarea name="deskripsi_singkat" placeholder="ceritakan tentang anda" rows="4" cols="50"></textarea><br><br>
+
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="pria">Pria <br>
+            <input type="radio" name="gender" value="wanita">Wanita<br><br>
+
+            <label>Topik Yang Disukai</label><br>
+            <input type="checkbox" name="topik_yang_disukai" value="olahraga"> olahraga<br><br>
+            <input type="checkbox" name="topik_yang_disukai" value="musik"> Musik<br><br>
+            <input type="checkbox" name="topik_yang_disukai" value="komedi"> Komedi<br><br>
+            <input type="checkbox" name="topik_yang_disukai" value="tantangan"> Tantangan<br><br>
+            <input type="checkbox" name="topik_yang_disukai" value="berita_internasional"> Berita Internasional<br><br>
+            <input type="checkbox" name="topik_yang_disukai" value="esport"> Esport<br><br>
+            <input type="checkbox" name="topik_yang_disukai" value="film"> Film<br><br>
+            <input type="checkbox" name="topik_yang_disukai" value="lainnya"> Lainnya<br><br>
+
+            <label for="language">Bahasa Yang Dikuasai (select)</label>
+             <select name="bahasa" id="bahasa">
+               <option value="id">Indonesia</option>
+               <option value="eng">Inggris</option>
+               <option value="spa">Spanyol</option>
+               <option value="ger">Jerman</option>
+               <option value="por">Portugis</option>
+               <option value="fra">Prancis</option>
+               <option value="rus">Rusia</option>
+               <option Value="chi">China</option>
+             </select>
+
+        </fieldset>
+
+        <input type="submit" value="Kirim" class="btn btn-submit">
+        <input type="reset"  value="hapus" class="btn btn-reset">
+        
+
+    </form>
+
+    
+</body>
+</html>
